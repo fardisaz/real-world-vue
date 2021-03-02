@@ -14,5 +14,9 @@ export default {
   getEvents() {
     //this '/events' will be added to the baseURL
     return apiClient.get('/events')
+  },
+  getEvent(id) {
+    //this '/events' will be added to the baseURL
+    return apiClient.get('/events/' + id)
   }
 }
